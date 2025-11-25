@@ -271,11 +271,7 @@ def output_units(values: Values, gcode: Gcode) -> None:
 def export_common(values: Values, objectslist, filename: str) -> str:
     """Do the common parts of postprocessing the objects in objectslist to filename."""
     coolant_mode: str
-    dia: PostUtils.GCodeEditorDialog
-    final: str
-    final_for_editor: str
     gcode: Gcode = []
-    editor_result: int = 1
 
     for obj in objectslist:
         if not hasattr(obj, "Path"):
@@ -318,6 +314,15 @@ def export_common(values: Values, objectslist, filename: str) -> str:
     output_tool_return(values, gcode)
     output_safetyblock(values, gcode)
     output_postamble(values, gcode)
+
+    finalize_export(values, gcode, filename)
+
+
+def finalize_export(values: Values, gcode: Gcode, filename: str) -> str:
+    dia: PostUtils.GCodeEditorDialog
+    final: str
+    final_for_editor: str
+    editor_result: int = 1
 
     # add the appropriate end-of-line characters to the gcode, including after the last line
     gcode.append("")

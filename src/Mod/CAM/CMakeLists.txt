@@ -326,6 +326,7 @@ SET(PathPythonPostScripts_SRCS
     Path/Post/scripts/philips_post.py
     Path/Post/scripts/refactored_centroid_post.py
     Path/Post/scripts/refactored_grbl_post.py
+    Path/Post/scripts/refactored_heidenhain_post.py
     Path/Post/scripts/refactored_linuxcnc_post.py
     Path/Post/scripts/refactored_mach3_mach4_post.py
     Path/Post/scripts/refactored_masso_g3_post.py
