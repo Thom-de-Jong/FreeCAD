@@ -53,7 +53,7 @@ from FreeCAD import Units
 
 translate = FreeCAD.Qt.translate
 
-debug = True
+debug = False
 if debug:
     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
     Path.Log.trackModule(Path.Log.thisModule())
@@ -62,41 +62,17 @@ if debug:
     from PySide import QtGui
 
     FreeCAD.Gui.getMainWindow().findChild(QtGui.QTextEdit, "Report view").clear()
-
 else:
     Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
 
 
-# *****************************************
-# *      Heidenhain Cleartext example     *
-# *****************************************
-# *                                       *
-# * 0 BEGIN PGM JOB MM                    *
-# * 1 TOOL CALL 2 Z S4000 ;5mm Endmill001 *
-# * 2 M6 ;Execute TOOL CALL               *
-# * 3 L Z6.000 R0 F MAX M3                *
-# * 4 L X1.506 Y0.100 F MAX               *
-# * 5 L Z4.000 F MAX                      *
-# * ...                                   *
-# * 58 CC X49.997 Y-10.001                *
-# * 59 C X62.498 Y-9.891 DR-              *
-# * 60 L X62.500 Y-50.000                 *
-# * 61 CC X49.999 Y-49.997                *
-# * 62 C X50.109 Y-62.498 DR-             *
-# * 63 L X10.000 Y-62.500                 *
-# * ...                                   *
-# * 185 L Z6.000 F MAX                    *
-# * 186 M30                               *
-# * 187 END PGM JOB MM                    *
-# *                                       *
-# *****************************************
-class Refactored_Heidenhain(PostProcessor):
+class Heidenhain(PostProcessor):
     """The Heidenhain post processor class."""
 
     def __init__(
         self,
         job,
-        tooltip=translate("CAM", "Refactored Heidenhain post processor"),
+        tooltip=translate("CAM", "Heidenhain post processor"),
         tooltipargs=[""],
         units="Metric",
     ) -> None:
@@ -106,7 +82,7 @@ class Refactored_Heidenhain(PostProcessor):
             tooltipargs=tooltipargs,
             units=units,
         )
-        Path.Log.debug("Refactored Heidenhain post processor initialized.")
+        Path.Log.debug("Heidenhain post processor initialized.")
 
     def init_values(self, values: Values) -> None:
         """Initialize values that are used throughout the postprocessor."""
@@ -158,7 +134,7 @@ class Refactored_Heidenhain(PostProcessor):
             "M",
         ]
 
-        values["line_number"] = 1
+        values["line_number"] = 0
         values["LINE_INCREMENT"] = 1
 
         #
@@ -263,6 +239,8 @@ class Refactored_Heidenhain(PostProcessor):
 def export(values: Values, objectslist: List, filename: str) -> str:
     """Custom export function for exporting Heidenhain Cleartext"""
     gcode: Gcode = []
+
+    print(f"{objectslist}")
 
     for obj in objectslist:
         if not hasattr(obj, "Path"):
