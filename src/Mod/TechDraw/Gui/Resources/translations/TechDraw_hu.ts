@@ -96,7 +96,7 @@
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1696"/>
       <source>Angle Dimension</source>
-      <translation type="unfinished">Angle Dimension</translation>
+      <translation>Szög méret</translation>
     </message>
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1697"/>
@@ -354,7 +354,7 @@
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1505"/>
       <source>Diameter Dimension</source>
-      <translation type="unfinished">Diameter Dimension</translation>
+      <translation>Átmérő méret</translation>
     </message>
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1506"/>
@@ -1805,7 +1805,7 @@ Left clicking on empty space will validate the current dimension. Right clicking
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1457"/>
       <source>Radius Dimension</source>
-      <translation type="unfinished">Radius Dimension</translation>
+      <translation>Sugár méret</translation>
     </message>
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1458"/>
@@ -2462,7 +2462,7 @@ If no object is selected, a file browser opens to select an SVG or image file.</
       <translation>Léggömb ballon húzása</translation>
     </message>
     <message>
-      <location filename="../../QGIViewDimension.cpp" line="313"/>
+      <location filename="../../QGIViewDimension.cpp" line="306"/>
       <source>Drag Dimension</source>
       <translation>Dimenzió húzása</translation>
     </message>
@@ -3476,7 +3476,7 @@ If no object is selected, a file browser opens to select an SVG or image file.</
       <translation>Összes fájl</translation>
     </message>
     <message>
-      <location filename="../../TaskDimension.cpp" line="549"/>
+      <location filename="../../TaskDimension.cpp" line="551"/>
       <location filename="../../CommandAlign.cpp" line="53"/>
       <location filename="../../CommandCreateDims.cpp" line="2014"/>
       <location filename="../../CommandCreateDims.cpp" line="2030"/>
@@ -4093,19 +4093,19 @@ If no object is selected, a file browser opens to select an SVG or image file.</
       <translation>Háromnál kevesebb kiválasztott kör</translation>
     </message>
     <message>
-      <location filename="../../TaskDimension.cpp" line="195"/>
-      <location filename="../../TaskDimension.cpp" line="210"/>
+      <location filename="../../TaskDimension.cpp" line="197"/>
+      <location filename="../../TaskDimension.cpp" line="212"/>
       <source>Missing Dimension</source>
       <translation>Hiányzó méret</translation>
     </message>
     <message>
-      <location filename="../../TaskDimension.cpp" line="196"/>
-      <location filename="../../TaskDimension.cpp" line="211"/>
+      <location filename="../../TaskDimension.cpp" line="198"/>
+      <location filename="../../TaskDimension.cpp" line="213"/>
       <source>Dimension not found. Was it deleted? Cannot continue.</source>
       <translation type="unfinished">Dimension not found. Was it deleted? Cannot continue.</translation>
     </message>
     <message>
-      <location filename="../../TaskDimension.cpp" line="550"/>
+      <location filename="../../TaskDimension.cpp" line="552"/>
       <source>Select 2 vertices or 1 edge</source>
       <translation type="unfinished">Select 2 vertices or 1 edge</translation>
     </message>
@@ -5581,7 +5581,7 @@ This affects only the toolbar; all tools remain available via the menu and short
     <message>
       <location filename="../../DlgPrefsTechDrawDimensions.ui" line="566"/>
       <source>Dimension tool diameter/radius mode</source>
-      <translation type="unfinished">Dimension tool diameter/radius mode</translation>
+      <translation>Méret eszköz átmérő/sugár mód</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawDimensions.ui" line="573"/>
@@ -7988,8 +7988,8 @@ You can pick further points to get line segments.</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="362"/>
-      <location filename="../../TaskProjGroup.cpp" line="658"/>
-      <location filename="../../TaskProjGroup.cpp" line="665"/>
+      <location filename="../../TaskProjGroup.cpp" line="659"/>
+      <location filename="../../TaskProjGroup.cpp" line="666"/>
       <source>Top</source>
       <translation>Felülnézet</translation>
     </message>
@@ -8000,8 +8000,8 @@ You can pick further points to get line segments.</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="409"/>
-      <location filename="../../TaskProjGroup.cpp" line="660"/>
-      <location filename="../../TaskProjGroup.cpp" line="662"/>
+      <location filename="../../TaskProjGroup.cpp" line="661"/>
+      <location filename="../../TaskProjGroup.cpp" line="663"/>
       <source>Left</source>
       <translation>Bal</translation>
     </message>
@@ -8012,14 +8012,14 @@ You can pick further points to get line segments.</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="449"/>
-      <location filename="../../TaskProjGroup.cpp" line="660"/>
-      <location filename="../../TaskProjGroup.cpp" line="662"/>
+      <location filename="../../TaskProjGroup.cpp" line="661"/>
+      <location filename="../../TaskProjGroup.cpp" line="663"/>
       <source>Right</source>
       <translation>Jobb oldalnézet</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="466"/>
-      <location filename="../../TaskProjGroup.cpp" line="663"/>
+      <location filename="../../TaskProjGroup.cpp" line="664"/>
       <source>Rear</source>
       <translation>Hátsó nézet</translation>
     </message>
@@ -8030,8 +8030,8 @@ You can pick further points to get line segments.</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="516"/>
-      <location filename="../../TaskProjGroup.cpp" line="658"/>
-      <location filename="../../TaskProjGroup.cpp" line="665"/>
+      <location filename="../../TaskProjGroup.cpp" line="659"/>
+      <location filename="../../TaskProjGroup.cpp" line="666"/>
       <source>Bottom</source>
       <translation>Alsó</translation>
     </message>
@@ -8088,31 +8088,31 @@ using the given X/Y spacings</translation>
       <translation>Függőleges tér a vetületek határai között</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="657"/>
-      <location filename="../../TaskProjGroup.cpp" line="666"/>
+      <location filename="../../TaskProjGroup.cpp" line="658"/>
+      <location filename="../../TaskProjGroup.cpp" line="667"/>
       <source>FrontTopLeft</source>
       <translation>ElölFellülBalra</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="657"/>
-      <location filename="../../TaskProjGroup.cpp" line="666"/>
+      <location filename="../../TaskProjGroup.cpp" line="658"/>
+      <location filename="../../TaskProjGroup.cpp" line="667"/>
       <source>FrontBottomRight</source>
       <translation>ElölAllulJobbra</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="659"/>
-      <location filename="../../TaskProjGroup.cpp" line="664"/>
+      <location filename="../../TaskProjGroup.cpp" line="660"/>
+      <location filename="../../TaskProjGroup.cpp" line="665"/>
       <source>FrontTopRight</source>
       <translation>ElölFellülJobbra</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="659"/>
-      <location filename="../../TaskProjGroup.cpp" line="664"/>
+      <location filename="../../TaskProjGroup.cpp" line="660"/>
+      <location filename="../../TaskProjGroup.cpp" line="665"/>
       <source>FrontBottomLeft</source>
       <translation>ElölAllulBalra</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="661"/>
+      <location filename="../../TaskProjGroup.cpp" line="662"/>
       <source>Front</source>
       <translation>Elölnézet</translation>
     </message>
@@ -9446,17 +9446,17 @@ a feladat párbeszédpanel nyitva van.</translation>
   <context>
     <name>TechDraw_FillTemplateFields</name>
     <message>
-      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="140"/>
+      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="138"/>
       <source>Fill Template Fields In </source>
       <translation type="unfinished">Fill Template Fields In </translation>
     </message>
     <message>
-      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="147"/>
+      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="145"/>
       <source>Update</source>
       <translation>Frissítés</translation>
     </message>
     <message>
-      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="404"/>
+      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="425"/>
       <source>Update All</source>
       <translation>Összes frissítése</translation>
     </message>
@@ -9489,12 +9489,12 @@ a feladat párbeszédpanel nyitva van.</translation>
       <translation type="unfinished">View or projection group missing</translation>
     </message>
     <message>
-      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="443"/>
+      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="465"/>
       <source>Corresponding template fields missing</source>
       <translation>Megfelelő sablonmezők hiányoznak</translation>
     </message>
     <message>
-      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="528"/>
+      <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="554"/>
       <source>Fill template fields</source>
       <translation type="unfinished">Fill template fields</translation>
     </message>
@@ -9809,22 +9809,22 @@ van egy nyitott feladat párbeszédpanel.</translation>
   <context>
     <name>TechDrawGui::DirectionEditDialog</name>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="965"/>
+      <location filename="../../TaskProjGroup.cpp" line="966"/>
       <source>Direction</source>
       <translation>Irány</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="1002"/>
+      <location filename="../../TaskProjGroup.cpp" line="1003"/>
       <source>OK</source>
       <translation>OK</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="1003"/>
+      <location filename="../../TaskProjGroup.cpp" line="1004"/>
       <source>Cancel</source>
       <translation>Mégse</translation>
     </message>
     <message>
-      <location filename="../../TaskProjGroup.cpp" line="1009"/>
+      <location filename="../../TaskProjGroup.cpp" line="1010"/>
       <source>Rotate by</source>
       <translation>Forgassa ezzel</translation>
     </message>
