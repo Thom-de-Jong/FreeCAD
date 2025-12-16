@@ -346,7 +346,7 @@ def export(objectslist, filename, argstring):
             MACHINE_LAST_POSITION["X"] = 99999
             MACHINE_LAST_POSITION["Y"] = 99999
             MACHINE_LAST_POSITION["Z"] = 99999
-        elif isinstance(obj.Proxy, Path.Op.ProfileEdges.ObjectProfile):
+        elif isinstance(obj.Proxy, Path.Op.Profile.ObjectProfile):
             Object_Kind = "PROFILE"
             if LBLIZE_ACTIVE:
                 LBLIZE_STAUS = True
